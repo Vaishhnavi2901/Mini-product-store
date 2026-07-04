@@ -1,0 +1,14 @@
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser{
+  "name": "mini-product-store",
+  "version": "1.0.0",
+  "description": "Mini product store static site",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server . -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
