@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Product Store</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+
+            <h1 class="text-2xl font-bold">
+                🛍 Mini Product Store
+            </h1>
+
+            <a href="cart.html"
+                class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-200">
+                🛒 Cart
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Search Filter -->
+    <section class="max-w-7xl mx-auto p-6">
+
+        <div class="grid md:grid-cols-3 gap-4">
+
+            <!-- Search -->
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Product..."
+                class="border rounded p-3">
+
+            <!-- Category -->
+            <select
+                id="categoryFilter"
+                class="border rounded p-3">
+
+                <option value="all">All Categories</option>
+
+            </select>
+
+            <!-- Sort -->
+            <select
+                id="sortPrice"
+                class="border rounded p-3">
+
+                <option value="">Sort By</option>
+
+                <option value="low">
+                    Price Low to High
+                </option>
+
+                <option value="high">
+                    Price High to Low
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+    <!-- Loading -->
+    <h2
+        id="loading"
+        class="text-center text-2xl font-bold">
+        Loading Products...
+    </h2>
+
+    <!-- Products -->
+    <section
+        id="productContainer"
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+
+    </section>
+
+    <script src="js/storage.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
